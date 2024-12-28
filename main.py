@@ -43,3 +43,4 @@ def practice():    # practice monster
 
 # main game code
 
+print("Your score is " + sr = int(stxt.readline([1]))
