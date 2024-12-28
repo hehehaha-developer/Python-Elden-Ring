@@ -6,6 +6,7 @@
 # imports
 
 from time import *
+import random
 
 # variebles
 
@@ -31,8 +32,13 @@ def upscore(n):    # adding the n value to the score
 def practice():    # practice monster
     mh = 500         # set monsters health
     ma = 50          # monters attack
-    while mh > 0 & h > 0 :
-        
+    if random.randint(1, 4) != 1:   # if it isint 1 do
+        while mh > 0 & h > 0 :
+            sleep(3)
+            print("You beat the practice beast")
+            upscore(500)
+
+
 
 
 # main game code
