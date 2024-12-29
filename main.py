@@ -10,9 +10,6 @@ import random
 
 # variebles
 
-
-b = [practice()]
-
 sr = " "    # score read from file
 s = 0       # score
 
