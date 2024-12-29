@@ -11,6 +11,8 @@ import random
 # variebles
 
 
+b = [practice()]
+
 sr = " "    # score read from file
 s = 0       # score
 
@@ -18,11 +20,12 @@ h = 1000   # health
 mh = 0     # monsters health
 ma = 0     # monsters attack
 
+
 stxt = open("score.txt" , "a")    # score data file
 
 
 # function definitions
-
+    
 
 def upscore(n):    # adding the n value to the score
     sr = int(stxt.readline([1]))
@@ -37,10 +40,21 @@ def practice():    # practice monster
             sleep(3)
             print("You beat the practice beast")
             upscore(500)
+            print("Your score is " + sr = int(stxt.readline([1]))
+    else
+        print("haha you died")
+        exit(1)
 
-
+def beast():
+    r = random.randint(1, 1)
+    if r == 1:
+        practice()
+    #elif r == 2:
 
 
 # main game code
 
 print("Your score is " + sr = int(stxt.readline([1]))
+sleep(2)
+print("Hehehaha Developer forced you to fight the practice beast")
+practice()
