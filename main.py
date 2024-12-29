@@ -45,7 +45,7 @@ def practice():    # practice monster
         exit(1)
 
 def supersmall():
-    print("Youve been challenged by the supersmall beast")
+    print("supersmall")
     ma = random.randint(5, 100)
     h = h - ma
     if h <= 0:
@@ -53,7 +53,7 @@ def supersmall():
         exit(1) 
 
 def small():
-    print("small beast attacks")
+    print("small")
     ma = random.randint(20, 170)
     h = h - ma
     if h <= 0:
