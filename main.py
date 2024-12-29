@@ -20,6 +20,7 @@ h = 1000   # health
 mh = 0     # monsters health
 ma = 0     # monsters attack
 
+r = 0    # ranndom var
 
 stxt = open("score.txt" , "a")    # score data file
 
@@ -38,23 +39,43 @@ def practice():    # practice monster
     if random.randint(1, 4) != 1:   # if it isint 1 do
         while mh > 0 & h > 0 :
             sleep(3)
-            print("You beat the practice beast")
+            print("You beat the practice beast")    # when the beast is beat 
             upscore(500)
-            print("Your score is " + sr = int(stxt.readline([1]))
-    else
-        print("haha you died")
+            print("Your score is " + str(stxt.readline([1])))   # add score
+    else:
+        print("haha you died")  # kill beast
         exit(1)
+
+def supersmall():
+    ma = random.randint(5, 100)
+    h = h - ma
+    if h <= 0:
+        print("well you had a good run. See you in heaven")
+        exit(1) 
+
+def small():
+    ma = random.randint(20, 170)
+    h = h - ma
+    if h <= 0:
+        print("Wahahahahah i small beast killed the great warrior")
+        exit(1) 
 
 def beast():
     r = random.randint(1, 1)
     if r == 1:
         practice()
-    #elif r == 2:
+
+    elif r == 2:
+        supersmall()
 
 
-# main game code
+# main game code 
 
-print("Your score is " + sr = int(stxt.readline([1]))
 sleep(2)
 print("Hehehaha Developer forced you to fight the practice beast")
 practice()
+while h > 0:
+    sleep(int(random.randint(1, 10)))
+    beast()
+
+exit(1)
