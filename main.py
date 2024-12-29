@@ -31,6 +31,7 @@ def upscore(n):    # adding the n value to the score
     stxt.write(sr) # update the score
 
 def practice():    # practice monster
+    print("practice beast approches")
     mh = 500         # set monsters health
     ma = 50          # monters attack
     if random.randint(1, 4) != 1:   # if it isint 1 do
@@ -44,6 +45,7 @@ def practice():    # practice monster
         exit(1)
 
 def supersmall():
+    print("Youve been challenged by the supersmall beast")
     ma = random.randint(5, 100)
     h = h - ma
     if h <= 0:
@@ -51,6 +53,7 @@ def supersmall():
         exit(1) 
 
 def small():
+    print("small beast attacks")
     ma = random.randint(20, 170)
     h = h - ma
     if h <= 0:
@@ -58,12 +61,15 @@ def small():
         exit(1) 
 
 def beast():
-    r = random.randint(1, 1)
+    r = random.randint(1, 3)
     if r == 1:
         practice()
 
     elif r == 2:
         supersmall()
+
+    elif r == 3:
+        small()
 
 
 # main game code 
